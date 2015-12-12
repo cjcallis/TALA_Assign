@@ -1,0 +1,72 @@
+\hypertarget{classmain_1_1_course}{}\section{main.\+Course Class Reference}
+\label{classmain_1_1_course}\index{main.\+Course@{main.\+Course}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \hyperlink{classmain_1_1_course_af58adc0f68774dd210b3866317334635}{\+\_\+\+\_\+init\+\_\+\+\_\+}
+\item 
+\hypertarget{classmain_1_1_course_ab44b5ad760c8e25554ac80df4e71a596}{}def {\bfseries \+\_\+\+\_\+repr\+\_\+\+\_\+} (self)\label{classmain_1_1_course_ab44b5ad760c8e25554ac80df4e71a596}
+
+\item 
+def \hyperlink{classmain_1_1_course_a073e4a06e67b4079e8c6548e9c84e7ce}{update} (self, day, bt)
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classmain_1_1_course_af7e97c78e19088f59ef0ee1529a1c69d}{}{\bfseries cid}\label{classmain_1_1_course_af7e97c78e19088f59ef0ee1529a1c69d}
+
+\item 
+\hypertarget{classmain_1_1_course_a6b039e5b92476f73cb431e9cdf60a129}{}{\bfseries num}\label{classmain_1_1_course_a6b039e5b92476f73cb431e9cdf60a129}
+
+\item 
+\hypertarget{classmain_1_1_course_a7af8b2fa9edd8940bffcf374f8f71da7}{}{\bfseries ctype}\label{classmain_1_1_course_a7af8b2fa9edd8940bffcf374f8f71da7}
+
+\item 
+\hypertarget{classmain_1_1_course_a44462f3c99bde68de74359c51093b7b2}{}{\bfseries ccap}\label{classmain_1_1_course_a44462f3c99bde68de74359c51093b7b2}
+
+\item 
+\hypertarget{classmain_1_1_course_abe5485cf7e159fbfbe02c5810f971fc1}{}{\bfseries ctime}\label{classmain_1_1_course_abe5485cf7e159fbfbe02c5810f971fc1}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classmain_1_1_course_af58adc0f68774dd210b3866317334635}{}\index{main\+::\+Course@{main\+::\+Course}!\+\_\+\+\_\+init\+\_\+\+\_\+@{\+\_\+\+\_\+init\+\_\+\+\_\+}}
+\index{\+\_\+\+\_\+init\+\_\+\+\_\+@{\+\_\+\+\_\+init\+\_\+\+\_\+}!main\+::\+Course@{main\+::\+Course}}
+\subsubsection[{\+\_\+\+\_\+init\+\_\+\+\_\+}]{\setlength{\rightskip}{0pt plus 5cm}def main.\+Course.\+\_\+\+\_\+init\+\_\+\+\_\+ (
+\begin{DoxyParamCaption}
+\item[{}]{self, }
+\item[{}]{cid, }
+\item[{}]{num, }
+\item[{}]{ctype = {\ttfamily \textquotesingle{}LEC\textquotesingle{}}, }
+\item[{}]{ccap = {\ttfamily \textquotesingle{}0~OF~0\textquotesingle{}}}
+\end{DoxyParamCaption}
+)}\label{classmain_1_1_course_af58adc0f68774dd210b3866317334635}
+\begin{DoxyVerb}:param cid: course id (letters)
+:param num: course code (number)
+:param ctype: type of course (lab or lecture)
+:param ccap: course capacity (how many seats need to be filled)
+\end{DoxyVerb}
+ 
+
+\subsection{Member Function Documentation}
+\hypertarget{classmain_1_1_course_a073e4a06e67b4079e8c6548e9c84e7ce}{}\index{main\+::\+Course@{main\+::\+Course}!update@{update}}
+\index{update@{update}!main\+::\+Course@{main\+::\+Course}}
+\subsubsection[{update(self, day, bt)}]{\setlength{\rightskip}{0pt plus 5cm}def main.\+Course.\+update (
+\begin{DoxyParamCaption}
+\item[{}]{self, }
+\item[{}]{day, }
+\item[{}]{bt}
+\end{DoxyParamCaption}
+)}\label{classmain_1_1_course_a073e4a06e67b4079e8c6548e9c84e7ce}
+\begin{DoxyVerb}The function update() add the lecture time in each weekday.
+The argument 'day' should be an integer in range(5) and 
+argument 'bt' should be a tuple of the form (starttime, endtime)
+:param day: day of the week
+:param bt: class beginning/ending time (tuple)
+\end{DoxyVerb}
+ 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+main.\+py\end{DoxyCompactItemize}
