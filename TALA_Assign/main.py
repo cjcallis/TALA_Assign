@@ -6,10 +6,23 @@ from tkinter import messagebox
 
 class Time:
     def __init__(self, hour = 0, minute = 0):
+        '''
+        
+        :param hour:
+        :param minute:
+        '''
         self.time = (hour, minute)
     def __le__(self, x):
+        '''
+        
+        :param x:
+        '''
         return self.time[0] < x.time[0] or self.time[0] == x.time[0] and self.time[1] <= x.time[1]
     def __ge__(self, x):
+        '''
+        
+        :param x:
+        '''
         return self.time[0] > x.time[0] or self.time[0] == x.time[0] and self.time[1] >= x.time[1]
     def __repr__(self):
         if self.time[1] >= 10:
@@ -17,11 +30,22 @@ class Time:
         else:
             return str(self.time[0]) + ':0' +str(self.time[1])
     def dis(self, y):  #this method measures the distance between self and another time y.
+        '''
+        
+        :param y:
+        '''
         return 60*(self.time[0] - y.time[0]) + self.time[1] - y.time[1]
 
     
 class Course:
     def __init__(self, cid, num, ctype = 'LEC', ccap = '0 OF 0'):
+        '''
+        
+        :param cid:
+        :param num:
+        :param ctype:
+        :param ccap:
+        '''
         self.cid = cid  # this is course id (type str)
         self.num = num  # this is course number (type int)
         self.ctype = ctype # this is course type, either 'LEC' or 'LAB'
@@ -39,12 +63,23 @@ class Course:
         The argument 'day' should be an integer in range(5) and 
         argument 'bt' should be a tuple of the form (starttime, endtime)'''    
     def update(self, day, bt):
+        '''
+        
+        :param day:
+        :param bt:
+        '''
         self.ctime[day].append(bt)
 
 
             
 class Student:
     def __init__(self, name, sid, level = 'UnderGrad'):
+        '''
+        
+        :param name:
+        :param sid:
+        :param level:
+        '''
         self.name = name  #this is student's name (type str)
         self.sid = int(sid)   #this is student's id number (type int)
         self.stime = tuple([list() for i in range(5)])  #this tuple records the time when the student is not available. The five lists correspond to Monday to Friday.
@@ -63,10 +98,20 @@ class Student:
     The argument 'day' should be an integer in range(5) and 
     argument 'bt' should be a tuple of the form (starttime, endtime)'''
     def update(self, day, bt):
+        '''
+        
+        :param day:
+        :param bt:
+        '''
         self.stime[day].append(bt)
 
 class Grad(Student):
     def __init__(self, name, sid):
+        '''
+        
+        :param name:
+        :param sid:
+        '''
         Student.__init__(self, name, sid, level = 'Grad')
         self.cou = dict()  #this dictionary records all the courses the student took, with the three digit course number as key and the grade as value. The course number maps to the grade.
         self.lan = '(Native speaker)'
@@ -109,6 +154,10 @@ cr = {} # course number maps to a tuple of two frozensets,
 
 # the following code is the initialization of the requirement dictionary 'cr'.
 def f(v = []):
+    '''
+    
+    :param v:
+    '''
     return frozenset([i for i in v])
 cr[101] = (f(), f())
 cr[103] = (f(), f())
@@ -178,6 +227,10 @@ the following function convert a string denoting time to a tuple of two integers
 for example, it will convert '1:23AM' to (1, 23) and '1:23PM' to (13, 23)
 '''
 def strtime(s):
+    '''
+    
+    :param s:
+    '''
     if s.index(':') == 1:
         if s[-2:].upper() == 'PM':
             return (int(s[0]) + 12, int(s[2:4]))
@@ -196,6 +249,10 @@ def strtime(s):
 
 #the following function returns the first index in string s which is a digit.
 def indig(s):
+    '''
+    
+    :param s:
+    '''
     c = 0
     for i in s:
         if not i.isdigit():
@@ -205,6 +262,10 @@ def indig(s):
 
 #the following function returns the first index in string s which is an alphabet.
 def inalp(s):
+    '''
+    
+    :param s:
+    '''
     c = 0
     for i in s:
         if not i.isalpha():
@@ -219,12 +280,26 @@ The following function scans the courses information from text file. The result 
 the first argument 'addr' should be the address of the text file which contains the course information.
 '''
 def coursescan(addr, id_c, keys = cr.keys()):
+    '''
+    
+    :param addr:
+    :param id_c:
+    :param keys:
+    '''
     def ccap(p): # this function parses the capacity of the course from string 'p'. If no capacity info is detected, the program consider the course being cancelled.
+        '''
+        
+        :param p:
+        '''
         for s in p:
             if 'OF' in s and s.split()[0].isdigit():
                 return s
         return ''
     def strins(p): # the string 'p' contains the full information of ONE course in the text file, and the function returns a tuple: (course id, course instance).
+        '''
+        
+        :param p:
+        '''
         dic = {}
         dic['cid'] = p[0].split()[0]
         dic['num'] = int(dic['cid'][4:7])
@@ -291,7 +366,18 @@ the second argument 'id_s' should be one of 'id_s6', 'id_s8' or 'id_g', dependin
 if you are scanning graduate students, the third argument 'level' should be Grad, since graduate students are represented by class Grad.
 '''
 def studentscan(addr, id_s, level = Student):
+    '''
+    
+    :param addr:
+    :param id_s:
+    :param level:
+    '''
     def strins(p, level):
+        '''
+        
+        :param p:
+        :param level:
+        '''
         dic = {}
         dic['name'] = p[0]
         dic['sid'] = p[1]
@@ -352,7 +438,16 @@ the following function updates the background information of graduate students.
 the first argument 'addr' should be the address of the text file which contains the background info of graduate students.
 '''
 def infoscan(addr, id_g = id_g):
+    '''
+    
+    :param addr:
+    :param id_g:
+    '''
     def strins(p):
+        '''
+        
+        :param p:
+        '''
         h = p[0]
         i = inalp(h)
         ids = h[:i].strip()
@@ -411,6 +506,12 @@ the following function check whether the time of course 'c' is in conflict with 
 the second argument 'offset' denotes the minimum number of minutes the course time should be apart from the student's unavailable time, the default value is 14 minutes.
 '''
 def nonconflict(c, s, offset = 14):
+    '''
+    
+    :param c:
+    :param s:
+    :param offset:
+    '''
     for i in range(5):
         for ct in c.ctime[i]:
             for st in s.stime[i]:
@@ -424,6 +525,12 @@ def nonconflict(c, s, offset = 14):
 
 class Datascan(Frame):
     def __init__(self, parent = None, typestr = None, title = ''):
+        '''
+        
+        :param parent:
+        :param typestr:
+        :param title:
+        '''
         Frame.__init__(self, parent)
         self.address = ''
         self.l0 = Label(self, text = 'Choose the text file which contains\n' + typestr)
@@ -451,6 +558,10 @@ class Datascan(Frame):
         self.destroy()
 
 def main(p):
+    '''
+    
+    :param p:
+    '''
     tt = Frame(p)
     tt.pack(expand = YES, fill = BOTH)
     Button(tt, text = 'Undergraduate 106', command = lambda: under(p, '106'), bd = 7, relief = RAISED, font = ('helvetica', 15, 'bold')).pack(side = TOP, expand = YES, fill = BOTH)
@@ -459,6 +570,11 @@ def main(p):
     Button(tt, text = 'Student Search', command = lambda: search(p), bd = 7, relief = RAISED, font = ('helvetica', 15, 'bold')).pack(side = TOP, expand = YES, fill = BOTH)
 
 def under(p = None, t = ''):
+    '''
+    
+    :param p:
+    :param t:
+    '''
     u = Toplevel(p)
     u.geometry('700x400+300-300')
     u.resizable(False, False)
@@ -473,6 +589,12 @@ def under(p = None, t = ''):
     b0.pack()
     
 def under1(title = '', fr = None, parent = None):
+    '''
+    
+    :param title:
+    :param fr:
+    :param parent:
+    '''
     address = ''
     address = askopenfilename(parent = parent, filetypes = [("Text files","*.txt")])
     if address != '':
@@ -508,6 +630,11 @@ def under1(title = '', fr = None, parent = None):
                         res = res + i + '  ' + id_sx[i].name + '\n'
             
 def sav(res, parent = None):
+    '''
+    
+    :param res:
+    :param parent:
+    '''
     addr = ''
     addr = asksaveasfilename(defaultextension = '.txt',  filetypes = [('Text files','*.txt')])
     if addr:
@@ -517,6 +644,10 @@ def sav(res, parent = None):
         parent.destroy()
 
 def grad0(p = None):
+    '''
+    
+    :param p:
+    '''
     u = Toplevel(p)
     u.geometry('700x400+300-300')
     u.resizable(False, False)
@@ -531,6 +662,11 @@ def grad0(p = None):
     b0.pack()
 
 def gradsche(fr, parent = None):
+    '''
+    
+    :param fr:
+    :param parent:
+    '''
     address = ''
     address = askopenfilename(parent = parent, filetypes = [("Text files","*.txt")])
     if address != '':
@@ -546,6 +682,11 @@ def gradsche(fr, parent = None):
             b1.pack()
 
 def grad1(fr, parent = None):
+    '''
+    
+    :param fr:
+    :param parent:
+    '''
     fr.destroy()
     fr2 = Frame(parent)
     fr2.pack(expand = YES, fill = BOTH)
@@ -556,6 +697,11 @@ def grad1(fr, parent = None):
     b2.pack()
 
 def gradinfo(fr, parent = None):
+    '''
+    
+    :param fr:
+    :param parent:
+    '''
     address = ''
     address = askopenfilename(parent = parent, filetypes = [("Text files","*.txt")])
     if address != '':
@@ -619,6 +765,10 @@ class ScrolledText(Frame):
         
 
 def search(parent = None):
+    '''
+    
+    :param parent:
+    '''
     u = Toplevel(parent)
     u.geometry('800x500+100-100')
     u.minsize(800, 500)
@@ -637,6 +787,11 @@ def search(parent = None):
     ss = ScrolledText(u)
     
 def info(s, ss):
+    '''
+    
+    :param s:
+    :param ss:
+    '''
     res = 'Student can not be found.'
     s = s.strip()
     if s.isdigit():
