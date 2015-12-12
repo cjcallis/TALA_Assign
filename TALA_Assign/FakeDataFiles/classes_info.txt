@@ -1,0 +1,732 @@
+These are taken from Courses Search.
+
+CISC101010 LEC
+	Principles of Computing 	31 OF 60 	3 Hrs 	TR
+	5:00PM - 6:15PM
+	KRB005
+	Neff,Jean Marie
+CISC101020L LAB
+	Principles of Computing 	7 OF 20 	3 Hrs 	F
+	8:00AM - 9:55AM
+	PRS305
+	Neff,Jean Marie
+CISC101021L LAB
+	Principles of Computing 	  	3 Hrs 	  	Canceled 	  	 
+CISC101022L LAB
+	Principles of Computing 	4 OF 20 	3 Hrs 	F
+	12:20PM - 2:15PM
+	PRS305
+	Neff,Jean Marie
+CISC101310 LEC
+
+    WL
+
+	Principles of Computing 	9 OF 24 	3 Hrs 	T
+	5:00PM - 9:00PM
+	ACDE760
+	Coleman,Daniel James
+CISC101510 LEC
+	Principles of Computing 	0 OF 18 	3 Hrs 	MW
+	7:00PM - 9:00PM
+	ACG182
+	Gibson,Robert W.
+CISC101710 LEC
+	Principles of Computing 	2 OF 35 	3 Hrs 	MW
+	3:45PM - 5:00PM
+	ACW415
+	Boyer,William Robert
+CISC101710L LAB
+	Principles of Computing 	2 OF 35 	3 Hrs 	F
+	12:00PM - 2:00PM
+	ACW112
+	Boyer,William Robert
+CISC101711 LEC
+	Principles of Computing 	  	3 Hrs 	  	Canceled 	  	 
+CISC101711L LAB
+	Principles of Computing 	  	3 Hrs 	  	Canceled 	  	 
+CISC103010 LEC
+	Introduction to Computer Science with Web Applications 	17 OF 60 	3 Hrs 	MWF
+	10:10AM - 11:00AM
+	GOR208
+	Yarrington,Debra Mary
+CISC103020L LAB
+	Introduction to Computer Science with Web Applications 	3 OF 20 	3 Hrs 	F
+	11:15AM - 12:05PM
+	MEM028
+	Yarrington,Debra Mary
+CISC103021L LAB
+	Introduction to Computer Science with Web Applications 	2 OF 20 	3 Hrs 	F
+	12:20PM - 1:10PM
+	MEM028
+	Yarrington,Debra Mary
+CISC103022L LAB
+	Introduction to Computer Science with Web Applications 	12 OF 20 	3 Hrs 	F
+	1:25PM - 2:15PM
+	MEM028
+	Yarrington,Debra Mary
+CISC106010 LEC
+	General Computer Science for Engineers 	2 OF 80 	3 Hrs 	TR
+	9:30AM - 10:45AM
+	MEM127
+	Leighton,Jonathan Tuttle
+CISC106011 LEC
+	General Computer Science for Engineers 	7 OF 80 	3 Hrs 	MW
+	8:40AM - 9:55AM
+	BRL206
+	Novocin PhD,Andrew Paul
+CISC106012 LEC
+	General Computer Science for Engineers 	6 OF 80 	3 Hrs 	TR
+	5:00PM - 6:15PM
+	GOR116
+	Kim,Janet
+CISC106013 LEC
+	General Computer Science for Engineers 	0 OF 80 	3 Hrs 	MW
+W
+	8:40AM - 9:55AM
+5:00PM - 7:00PM
+	BRL207
+EXAM NOTE
+	Leighton,Jonathan Tuttle
+Leighton,Jonathan Tuttle
+CISC106014 LEC
+	General Computer Science for Engineers 	0 OF 80 	3 Hrs 	MW
+W
+	3:35PM - 4:50PM
+5:00PM - 7:00PM
+	GOR205
+EXAM NOTE
+	Leighton,Jonathan Tuttle
+Leighton,Jonathan Tuttle
+CISC106015 LEC
+
+    UD Capture
+
+	General Computer Science for Engineers 	1 OF 80 	3 Hrs 	MWF
+	4:40PM - 5:30PM
+	KRB004
+	Bunville,Stephen Louis
+CISC106016 LEC
+
+    UD Capture
+
+	General Computer Science for Engineers 	4 OF 80 	3 Hrs 	MWF
+	11:15AM - 12:05PM
+	GOR104
+	Harvey,Terrence Gregory
+CISC106020L LAB
+	General Computer Science for Engineers 	0 OF 40 	3 Hrs 	T
+	11:15AM - 12:05PM
+	SPL010
+	Leighton,Jonathan Tuttle
+CISC106021L LAB
+	General Computer Science for Engineers 	2 OF 40 	3 Hrs 	T
+	12:20PM - 1:10PM
+	SPL010
+	Leighton,Jonathan Tuttle
+CISC106030L LAB
+	General Computer Science for Engineers 	1 OF 40 	3 Hrs 	T
+	9:05AM - 9:55AM
+	SPL010
+	Novocin PhD,Andrew Paul
+CISC106031L LAB
+	General Computer Science for Engineers 	6 OF 40 	3 Hrs 	T
+	10:10AM - 11:00AM
+	SPL010
+	Novocin PhD,Andrew Paul
+CISC106040L LAB
+	General Computer Science for Engineers 	5 OF 40 	3 Hrs 	W
+	9:05AM - 9:55AM
+	SPL010
+	Kim,Janet
+CISC106041L LAB
+	General Computer Science for Engineers 	1 OF 40 	3 Hrs 	W
+	10:10AM - 11:00AM
+	SPL010
+	Kim,Janet
+CISC106050L LAB
+	General Computer Science for Engineers 	0 OF 40 	3 Hrs 	M
+	10:10AM - 11:00AM
+	SPL010
+	Leighton,Jonathan Tuttle
+CISC106051L LAB
+	General Computer Science for Engineers 	0 OF 40 	3 Hrs 	M
+	11:15AM - 12:05PM
+	SPL010
+	Leighton,Jonathan Tuttle
+CISC106060L LAB
+	General Computer Science for Engineers 	0 OF 40 	3 Hrs 	T
+	1:25PM - 2:15PM
+	SPL010
+	Leighton,Jonathan Tuttle
+CISC106061L LAB
+	General Computer Science for Engineers 	0 OF 40 	3 Hrs 	T
+	2:30PM - 3:20PM
+	SPL010
+	Leighton,Jonathan Tuttle
+CISC106070L LAB
+	General Computer Science for Engineers 	0 OF 40 	3 Hrs 	M
+	5:45PM - 6:35PM
+	SPL010
+	Bunville,Stephen Louis
+CISC106071L LAB
+	General Computer Science for Engineers 	1 OF 40 	3 Hrs 	M
+	6:50PM - 7:40PM
+	SPL010
+	Bunville,Stephen Louis
+CISC106080 LEC
+	General Computer Science for Engineers 	0 OF 30 	3 Hrs 	MWF
+	11:15AM - 12:05PM
+	GOR204
+	Yarrington,Debra Mary
+CISC106080L LAB
+	General Computer Science for Engineers 	0 OF 30 	3 Hrs 	M
+	2:30PM - 3:20PM
+	SPL010
+	Yarrington,Debra Mary
+CISC106081 LEC
+	General Computer Science for Engineers 	5 OF 30 	3 Hrs 	MWF
+	1:25PM - 2:15PM
+	PRS114
+	Yarrington,Debra Mary
+CISC106081L LAB
+	General Computer Science for Engineers 	5 OF 30 	3 Hrs 	M
+	3:35PM - 4:25PM
+	SPL010
+	Yarrington,Debra Mary
+CISC106082 LEC
+	General Computer Science for Engineers 	11 OF 30 	3 Hrs 	MWF
+	2:30PM - 3:20PM
+	PRS114
+	Yarrington,Debra Mary
+CISC106082L LAB
+	General Computer Science for Engineers 	11 OF 30 	3 Hrs 	M
+	4:40PM - 5:30PM
+	SPL010
+	Yarrington,Debra Mary
+CISC106083L LAB
+	General Computer Science for Engineers 	  	3 Hrs 	  	Canceled 	  	 
+CISC106100L LAB
+	General Computer Science for Engineers 	3 OF 40 	3 Hrs 	M
+	12:20PM - 1:10PM
+	SPL010
+	Harvey,Terrence Gregory
+CISC106101L LAB
+	General Computer Science for Engineers 	1 OF 40 	3 Hrs 	M
+	1:25PM - 2:15PM
+	SPL010
+	Harvey,Terrence Gregory
+CISC108010 LEC
+	Introduction to Computer Science I 	3 OF 30 	3 Hrs 	TR
+F
+	9:30AM - 10:45AM
+5:00PM - 7:00PM
+	CLB102
+EXAM NOTE
+	Decker,Keith S
+
+CISC108011 LEC
+
+    UD Capture
+
+	Introduction to Computer Science I 	11 OF 60 	3 Hrs 	TR
+F
+	11:00AM - 12:15PM
+5:00PM - 7:00PM
+	LEH125
+EXAM NOTE
+	Siegel,Stephen
+
+CISC108020L LAB
+	Introduction to Computer Science I 	3 OF 22 	3 Hrs 	R
+	11:00AM - 12:30PM
+	SPL010
+	Decker,Keith S
+CISC108021L LAB
+	Introduction to Computer Science I 	14 OF 22 	3 Hrs 	R
+	12:45PM - 2:15PM
+	SPL010
+	Decker,Keith S
+CISC108030L LAB
+	Introduction to Computer Science I 	8 OF 30 	3 Hrs 	R
+	2:30PM - 4:00PM
+	SPL010
+	Siegel,Stephen
+CISC108031L LAB
+	Introduction to Computer Science I 	3 OF 30 	3 Hrs 	R
+	4:15PM - 5:45PM
+	SPL010
+	Siegel,Stephen
+CISC108080L LAB
+	Introduction to Computer Science I 	1 OF 24 	3 Hrs 	R
+	6:30PM - 8:00PM
+	SPL010
+	Decker,Keith S
+CISC108080L LAB
+	Introduction to Computer Science I 	1 OF 24 	3 Hrs 	R
+	6:30PM - 8:00PM
+	SPL010
+	Decker,Keith S
+CISC108080 LEC
+	Introduction to Computer Science I 	1 OF 24 	3 Hrs 	TR
+F
+	9:30AM - 10:45AM
+5:00PM - 7:00PM
+	CLB102
+EXAM NOTE
+	Decker,Keith S
+
+CISC167080L LAB
+	SEMINAR: INTROD MATLAB PROG FOR CHEM EG 	0 OF 30 	3 Hrs 	W
+	5:45PM - 6:35PM
+	SPL010
+	Schure,Mark R
+CISC167080 LEC
+	SEMINAR: INTROD MATLAB PROG FOR CHEM EG 	0 OF 30 	3 Hrs 	TR
+	11:00AM - 12:15PM
+	WHL110
+	Schure,Mark R
+CISC181010 LEC
+
+    UD Capture
+
+	Introduction to Computer Science II 	11 OF 60 	3 Hrs 	MW
+W
+	5:30PM - 6:45PM
+5:00PM - 7:00PM
+	KRB005
+EXAM NOTE
+	Gibbons,Bert R
+Gibbons,Bert R
+CISC181011 LEC
+
+    UD Capture
+
+	Introduction to Computer Science II 	12 OF 60 	3 Hrs 	MW
+W
+	7:00PM - 8:15PM
+5:00PM - 7:00PM
+	KRB005
+EXAM NOTE
+	Gibbons,Bert R
+Gibbons,Bert R
+CISC181020L LAB
+	Introduction to Computer Science II 	4 OF 20 	3 Hrs 	W
+	11:15AM - 12:05PM
+	SPL010
+	Gibbons,Bert R
+CISC181021L LAB
+	Introduction to Computer Science II 	4 OF 21 	3 Hrs 	W
+	12:20PM - 1:10PM
+	SPL010
+	Gibbons,Bert R
+CISC181022L LAB
+	Introduction to Computer Science II 	4 OF 20 	3 Hrs 	W
+	1:25PM - 2:15PM
+	SPL010
+	Gibbons,Bert R
+CISC181030L LAB
+	Introduction to Computer Science II 	0 OF 22 	3 Hrs 	W
+	2:30PM - 3:20PM
+	SPL010
+	Gibbons,Bert R
+CISC181031L LAB
+	Introduction to Computer Science II 	4 OF 24 	3 Hrs 	W
+	3:35PM - 4:25PM
+	SPL010
+	Gibbons,Bert R
+CISC181032L LAB
+	Introduction to Computer Science II 	  	3 Hrs 	  	Canceled 	  	 
+CISC220010 LEC
+	Data Structures 	0 OF 60 	3 Hrs 	TR
+	2:00PM - 3:15PM
+	KRB005
+	Silber,Herbert Gregory
+CISC220011 LEC
+	Data Structures 	0 OF 60 	3 Hrs 	TR
+	11:00AM - 12:15PM
+	GOR208
+	Novocin PhD,Andrew Paul
+CISC220020L LAB
+	Data Structures 	0 OF 20 	3 Hrs 	F
+	9:05AM - 9:55AM
+	SPL010
+	Silber,Herbert Gregory
+CISC220021L LAB
+	Data Structures 	0 OF 20 	3 Hrs 	F
+	10:10AM - 11:00AM
+	SPL010
+	Silber,Herbert Gregory
+CISC220022L LAB
+	Data Structures 	0 OF 20 	3 Hrs 	F
+	11:15AM - 12:05PM
+	SPL010
+	Silber,Herbert Gregory
+CISC220030L LAB
+	Data Structures 	0 OF 20 	3 Hrs 	F
+	12:20PM - 1:10PM
+	SPL010
+	Novocin PhD,Andrew Paul
+CISC220031L LAB
+	Data Structures 	0 OF 20 	3 Hrs 	F
+	1:25PM - 2:15PM
+	SPL010
+	Novocin PhD,Andrew Paul
+CISC220032L LAB
+	Data Structures 	0 OF 20 	3 Hrs 	F
+	2:30PM - 3:20PM
+	SPL010
+	Novocin PhD,Andrew Paul
+CISC220080L LAB
+	Data Structures 	1 OF 20 	3 Hrs 	F
+	3:35PM - 4:25PM
+	SPL010
+	Novocin PhD,Andrew Paul
+CISC220080 LEC
+	Data Structures 	1 OF 20 	3 Hrs 	TR
+	9:30AM - 10:45AM
+	GOR114
+	Novocin PhD,Andrew Paul
+CISC260010 LEC
+	Machine Organization and Assembly Language 	0 OF 55 	3 Hrs 	TR
+	12:30PM - 1:45PM
+	GOR102
+	Liao,Li
+CISC275010 LEC
+
+    UD Capture
+
+	Introduction to Software Engineering 	3 OF 40 	3 Hrs 	MW
+	8:40AM - 9:55AM
+	ALS133
+	Harvey,Terrence Gregory
+CISC275020L LAB
+	Introduction to Software Engineering 	0 OF 20 	3 Hrs 	T
+	3:35PM - 4:25PM
+	SPL010
+	Harvey,Terrence Gregory
+CISC275021L LAB
+	Introduction to Software Engineering 	3 OF 20 	3 Hrs 	T
+	5:45PM - 6:35PM
+	SPL010
+	Harvey,Terrence Gregory
+CISC303010 LEC
+
+    UD Capture
+
+	Automata Theory 	1 OF 40 	3 Hrs 	TR
+	12:30PM - 1:45PM
+	MKL002
+	Harvey,Terrence Gregory
+CISC304010 LEC
+	Logic and Programming 	0 OF 40 	3 Hrs 	MWF
+	9:05AM - 9:55AM
+	MEM123
+	Carberry,Mary Sandra Semon
+CISC320010 LEC
+	Introduction to Algorithms 	23 OF 60 	3 Hrs 	MW
+	3:35PM - 4:50PM
+	GOR103
+	KURDI PhD,Mohamed Zakaria
+CISC355010 LEC
+	Computers, Ethics and Society 	0 OF 38 	3 Hrs 	MF
+	8:40AM - 9:55AM
+	SMI209
+	Lynch,Thomas Gregory
+CISC357010 LEC
+	Field Experiences in Teaching Computing 	14 OF 20 	1-3 Hrs 	T
+	9:30AM - 10:45AM
+	SMI102A
+	Pollock,Lori; Harvey,Terrence Gregory; Mouza,Chrystalla
+CISC360010 LEC
+
+    UD Capture
+
+	Computer Architecture 	4 OF 45 	3 Hrs 	TR
+	8:00AM - 9:15AM
+	MKL002
+	Roosen,Andrew Robert
+CISC361010 LEC
+	Operating Systems 	12 OF 40 	3 Hrs 	M
+	5:00PM - 8:00PM
+	SMI209
+	Taufer,Michela
+CISC366000 IND
+	Independent Study 	997 OF 999 	3 Hrs 	TBA
+	12:00AM - 12:00AM
+	
+	Staff
+CISC404010 LEC
+	Logic in Computer Science 	5 OF 10 	3 Hrs 	MWF
+	2:30PM - 3:20PM
+	BRL116
+	Chester,Daniel Leon
+CISC410010 LEC
+
+    C/L MATH426 (owner)
+
+	Computational Mathematics I 	0 OF 5 	3 Hrs 	MWF
+	1:25PM - 2:15PM
+	EWG207
+	Driscoll,Tobin A
+CISC414010 LEC
+	Formal Methods in Software Engineering 	1 OF 5 	3 Hrs 	TR
+	3:30PM - 4:45PM
+	ALS222
+	Siegel,Stephen
+CISC436010 LEC
+	Computational Biology and Bioinformatics 	0 OF 18 	3 Hrs 	TR
+	2:00PM - 3:15PM
+	PRN238
+	Shatkay,Hagit
+CISC437010 LEC
+	Database Systems 	0 OF 25 	3 Hrs 	TR
+	5:00PM - 6:15PM
+	GOR103
+	Shatkay,Hagit
+CISC442010 LEC
+	Introduction to Computer Vision 	0 OF 15 	3 Hrs 	MF
+	8:40AM - 9:55AM
+	KRB005
+	Kambhamettu,Chandra
+CISC450010 (owner) LEC
+
+    C/L CPEG419
+
+    UD Capture
+
+	Computer Networks I 	0 OF 13 	3 Hrs 	MWF
+	2:30PM - 3:20PM
+	SHL116
+	Bohacek,Stephan K
+CISC466000 IND
+	Independent Study 	997 OF 999 	3 Hrs 	TBA
+	12:00AM - 12:00AM
+	
+	Staff
+CISC471010 LEC
+	Compiler Design 	0 OF 20 	3 Hrs 	TR
+	12:30PM - 1:45PM
+	GOR304
+	Pollock,Lori
+CISC475010 LEC
+	Advanced Software Engineering 	0 OF 35 	3 Hrs 	MW
+	5:30PM - 6:45PM
+	MEM109
+	Boykin,James Matthew
+CISC475020L LAB
+	Advanced Software Engineering 	0 OF 35 	3 Hrs 	F
+	3:35PM - 4:50PM
+	MEM109
+	Boykin,James Matthew
+CISC475080L LAB
+	Advanced Software Engineering 	4 OF 5 	3 Hrs 	F
+	3:35PM - 4:50PM
+	MEM109
+	Boykin,James Matthew
+CISC475080 LEC
+	Advanced Software Engineering 	4 OF 5 	3 Hrs 	MW
+	5:30PM - 6:45PM
+	MEM109
+	Boykin,James Matthew
+CISC481010 (owner) LEC
+
+    C/L CGSC481
+
+	Artificial Intelligence 	0 OF 10 	3 Hrs 	TR
+	11:00AM - 12:15PM
+	SHL100
+	Decker,Keith S
+CISC483010 LEC
+	Introduction to Data Mining 	0 OF 13 	3 Hrs 	MWF
+	11:15AM - 12:05PM
+	ISE307
+	Carberry,Mary Sandra Semon
+CISC483010 LEC
+	Introduction to Data Mining 	0 OF 13 	3 Hrs 	MWF
+	11:15AM - 12:05PM
+	ISE307
+	Carberry,Mary Sandra Semon
+CISC604010 LEC
+	Logic in Computer Science 	7 OF 20 	3 Hrs 	MWF
+	2:30PM - 3:20PM
+	BRL116
+	Chester,Daniel Leon
+CISC613010 (owner) LEC
+
+    C/L CPEG613
+
+    UD Capture
+
+	Software Requirements Engineering 	10 OF 15 	3 Hrs 	R
+	5:00PM - 8:00PM
+	EWG203
+	Morris PhD,Derek Samuel
+CISC614010 (owner) LEC
+
+    C/L CPEG614
+
+	Formal Methods in Software Engineering 	12 OF 18 	3 Hrs 	TR
+	3:30PM - 4:45PM
+	ALS222
+	Siegel,Stephen
+CISC615010 (owner) LEC
+
+    C/L CPEG615
+
+	Software Testing and Maintenance 	5 OF 20 	3 Hrs 	MW
+	7:00PM - 8:15PM
+	MEM110
+	Boykin,James Matthew
+CISC621010 LEC
+	Algorithm Design and Analysis 	0 OF 30 	3 Hrs 	TR
+	8:00AM - 9:15AM
+	GOR103
+	Saunders,B David
+CISC636010 LEC
+	Computational Biology and Bioinformatics 	0 OF 12 	3 Hrs 	TR
+	2:00PM - 3:15PM
+	PRN238
+	Shatkay,Hagit
+CISC637010 LEC
+	Database Systems 	2 OF 15 	3 Hrs 	TR
+	5:00PM - 6:15PM
+	GOR103
+	Shatkay,Hagit
+CISC642010 LEC
+	Introduction to Computer Vision 	0 OF 15 	3 Hrs 	MF
+	8:40AM - 9:55AM
+	KRB005
+	Kambhamettu,Chandra
+CISC650010 (owner) LEC
+
+    C/L CPEG651, ELEG651
+
+	Computer Networks II 	1 OF 16 	3 Hrs 	TR
+	9:30AM - 10:45AM
+	GOR223
+	Sethi,Adarshpal S
+CISC662010 LEC
+	Computer Systems: Architecture 	23 OF 30 	3 Hrs 	TR
+	7:00PM - 8:15PM
+	SMI209
+	Chandrasekaran PhD,Sunita
+CISC666000 IND
+	Special Problem 	999 OF 999 	3 Hrs 	TBA
+	12:00AM - 12:00AM
+	
+	Staff
+CISC672010 LEC
+	Compiler Construction 	7 OF 20 	3 Hrs 	TR
+	12:30PM - 1:45PM
+	GOR304
+	Pollock,Lori
+CISC675010 LEC
+	Software Engineering Principles and Practices 	0 OF 5 	3 Hrs 	MW
+	5:30PM - 6:45PM
+	MEM109
+	Boykin,James Matthew
+CISC675020L LAB
+	Software Engineering Principles and Practices 	0 OF 5 	3 Hrs 	F
+	3:35PM - 4:50PM
+	MEM109
+	Boykin,James Matthew
+CISC681010 (owner) LEC
+
+    C/L CGSC681
+
+	Artificial Intelligence 	5 OF 20 	3 Hrs 	TR
+	11:00AM - 12:15PM
+	SHL100
+	Decker,Keith S
+CISC683010 LEC
+	Introduction to Data Mining 	0 OF 13 	3 Hrs 	MWF
+	11:15AM - 12:05PM
+	ISE307
+	Carberry,Mary Sandra Semon
+CISC699000 IND
+	Graduate Internship 	0 OF 1 	1 Hrs 	TBA
+	12:00AM - 12:00AM
+	
+	Staff
+CISC849010 LEC
+	Advanced Topics in Computer Applications: FINANCIAL SERVICES ANALYTICS 	1 OF 15 	3 Hrs 	TR
+	3:30PM - 4:45PM
+	MEM037
+	Cavazos,John
+CISC849011 LEC
+	Advanced Topics in Computer Applications: ADV TPC BIG DATA & CLOUD COMPM 	2 OF 15 	3 Hrs 	W
+	5:00PM - 8:00PM
+	MEM049
+	Mashayekhy,Lena
+CISC866000 IND
+	Special Problem 	992 OF 999 	1-12 Hrs 	TBA
+	12:00AM - 12:00AM
+	
+	Staff
+CISC868000 RSC
+	Research 	14 OF 35 	1-9 Hrs 	TBA
+	12:00AM - 12:00AM
+	NO ROOM
+	Staff
+CISC869000 IND
+	Master's Thesis 	999 OF 999 	1-6 Hrs 	TBA
+	12:00AM - 12:00AM
+	
+	Staff
+CISC879010 LEC
+	Advanced Topics in Architecture and Software Systems: HPC and Data AnALyTICS 	4 OF 15 	3 Hrs 	T
+	5:00PM - 8:00PM
+	SMI341
+	Taufer,Michela
+CISC882010 LEC
+	Natural Language Processing 	  	3 Hrs 	  	Canceled 	  	 
+CISC889010 LEC
+	Advanced Topics in Artificial Intelligence: EMPIRICAL METHODS FOR CIS 	0 OF 15 	3 Hrs 	MW
+	3:35PM - 4:50PM
+	ISE307
+	Carterette,Benjamin A
+CISC890010 LEC
+	Colloquium: Computer Science: NETWORKS 	26 OF 30 	0 Hrs 	W
+	11:15AM - 12:30PM
+	SMI102A
+	Sethi,Adarshpal S
+CISC890011 LEC
+	Colloquium: Computer Science: THEORY AND ALGORITHMS 	21 OF 30 	0 Hrs 	M
+	11:15AM - 12:05PM
+	SMI102A
+	Saunders,B David
+CISC890012 LEC
+	Colloquium: Computer Science: NATURAL LANGUAGE PROCESS 	21 OF 30 	0 Hrs 	M
+	1:25PM - 2:40PM
+	SMI102A
+	McCoy,Kathleen Filliben
+CISC890015 LEC
+	Colloquium: Computer Science: SYSTEMS 	16 OF 30 	0 Hrs 	F
+	12:15PM - 1:30PM
+	SMI102A
+	Taufer,Michela
+CISC890017 LEC
+	Colloquium: Computer Science: GRAPHICS & VISION 	15 OF 30 	0 Hrs 	W
+	1:25PM - 2:40PM
+	SMI102A
+	Rasmussen,Christopher E
+CISC890018 LEC
+	Colloquium: Computer Science: BIOINFORMATICS 	29 OF 30 	0 Hrs 	M
+	3:35PM - 4:50PM
+	SITE NOTE
+	Liao,Li; Singh,Abhyudai
+CISC890019 LEC
+	Colloquium: Computer Science: NEW GRADUATE STUDENT 	0 OF 30 	0 Hrs 	M
+	5:00PM - 6:15PM
+	GOR117
+	Kambhamettu,Chandra
+CISC964000 IND
+	Pre-Candidacy Study 	987 OF 999 	3-12 Hrs 	TBA
+	12:00AM - 12:00AM
+	
+	Staff
+CISC969000 IND
+	Doctoral Dissertation 	998 OF 999 	1-12 Hrs 	TBA
+	12:00AM - 12:00AM
+	
+	Staff 
