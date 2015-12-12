@@ -8,20 +8,20 @@ class Time:
     def __init__(self, hour = 0, minute = 0):
         '''
         
-        :param hour:
-        :param minute:
+        :param hour: inside the schedule text file; the hour of the class starting/ending
+        :param minute: inside the schedule text file; the minute of the class starting/ending
         '''
         self.time = (hour, minute)
     def __le__(self, x):
         '''
         
-        :param x:
+        :param x: 
         '''
         return self.time[0] < x.time[0] or self.time[0] == x.time[0] and self.time[1] <= x.time[1]
     def __ge__(self, x):
         '''
         
-        :param x:
+        :param x: 
         '''
         return self.time[0] > x.time[0] or self.time[0] == x.time[0] and self.time[1] >= x.time[1]
     def __repr__(self):
@@ -41,10 +41,10 @@ class Course:
     def __init__(self, cid, num, ctype = 'LEC', ccap = '0 OF 0'):
         '''
         
-        :param cid:
-        :param num:
-        :param ctype:
-        :param ccap:
+        :param cid: course id (letters)
+        :param num: course code (number)
+        :param ctype: type of course (lab or lecture)
+        :param ccap: course capacity (how many seats need to be filled)
         '''
         self.cid = cid  # this is course id (type str)
         self.num = num  # this is course number (type int)
@@ -52,7 +52,7 @@ class Course:
         self.ccap = ccap  # this is course capacity
         self.ctime = tuple([list() for i in range(5)])  #this is course time, with five lists correspond to Monday to Friday respectively.
     def __repr__(self):
-        days = ('Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday')
+        days = ('Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday') #days of the week
         res = self.cid +' '+ self.ctype + '   ' + self.ccap + '\n'
         for i in range(5):
             if self.ctime[i]:
@@ -65,8 +65,8 @@ class Course:
     def update(self, day, bt):
         '''
         
-        :param day:
-        :param bt:
+        :param day: day of the week
+        :param bt: class beginning/ending time (tuple)
         '''
         self.ctime[day].append(bt)
 
@@ -76,9 +76,9 @@ class Student:
     def __init__(self, name, sid, level = 'UnderGrad'):
         '''
         
-        :param name:
-        :param sid:
-        :param level:
+        :param name: student's name
+        :param sid: student id number
+        :param level: undergradute or graduate
         '''
         self.name = name  #this is student's name (type str)
         self.sid = int(sid)   #this is student's id number (type int)
@@ -87,7 +87,7 @@ class Student:
         self.level = level  #this records whether the student is 'UnderGrad' or 'Grad'.
         self.ta = []  #this list records all the courses for which this student can be a TA.
     def __repr__(self):
-        days = ('Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday')
+        days = ('Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday') #day of the week (according to their course schedule)
         res = self.name + ' (ID:' + str(self.sid) + ') ' + self.level + '\nHe/she can be TA for the following courses\n' + '\n'.join(self.ta) + '\nHe/She has class at:\n'
         for i in range(5):
             if self.stime[i]:
@@ -100,8 +100,8 @@ class Student:
     def update(self, day, bt):
         '''
         
-        :param day:
-        :param bt:
+        :param day: returns day of the week
+        :param bt: returns time (hour:minute - hour:minute)
         '''
         self.stime[day].append(bt)
 
@@ -109,12 +109,12 @@ class Grad(Student):
     def __init__(self, name, sid):
         '''
         
-        :param name:
-        :param sid:
+        :param name: student name
+        :param sid: student id number
         '''
         Student.__init__(self, name, sid, level = 'Grad')
         self.cou = dict()  #this dictionary records all the courses the student took, with the three digit course number as key and the grade as value. The course number maps to the grade.
-        self.lan = '(Native speaker)'
+        self.lan = '(Native speaker)' #default ELI rating (student's first language is English
         self.pl = set()  #this set records all the language this student is familiar with.
         self.note = ''  #this string records all the additional notes about this student.
     def __repr__(self):
@@ -156,7 +156,7 @@ cr = {} # course number maps to a tuple of two frozensets,
 def f(v = []):
     '''
     
-    :param v:
+    :param v: array of course criteria requirements that includes prerequisites f(some_num), a list of prerequisites f([some_num1,some_num2]), and languages f('some_lang')
     '''
     return frozenset([i for i in v])
 cr[101] = (f(), f())
@@ -229,7 +229,7 @@ for example, it will convert '1:23AM' to (1, 23) and '1:23PM' to (13, 23)
 def strtime(s):
     '''
     
-    :param s:
+    :param s: first time in the time tuple (start_time : end_time AM/PM)
     '''
     if s.index(':') == 1:
         if s[-2:].upper() == 'PM':
@@ -251,7 +251,7 @@ def strtime(s):
 def indig(s):
     '''
     
-    :param s:
+    :param s: return first index of string that is a digit
     '''
     c = 0
     for i in s:
@@ -264,7 +264,7 @@ def indig(s):
 def inalp(s):
     '''
     
-    :param s:
+    :param s: return the first index in the string that is a character
     '''
     c = 0
     for i in s:
@@ -282,14 +282,14 @@ the first argument 'addr' should be the address of the text file which contains 
 def coursescan(addr, id_c, keys = cr.keys()):
     '''
     
-    :param addr:
-    :param id_c:
-    :param keys:
+    :param addr: the address of the string which contains the course information 
+    :param id_c: the id of the course
+    :param keys: number of course credits
     '''
     def ccap(p): # this function parses the capacity of the course from string 'p'. If no capacity info is detected, the program consider the course being cancelled.
         '''
         
-        :param p:
+        :param p: returns course capacity as a digit rather than a string
         '''
         for s in p:
             if 'OF' in s and s.split()[0].isdigit():
@@ -298,7 +298,7 @@ def coursescan(addr, id_c, keys = cr.keys()):
     def strins(p): # the string 'p' contains the full information of ONE course in the text file, and the function returns a tuple: (course id, course instance).
         '''
         
-        :param p:
+        :param p: 
         '''
         dic = {}
         dic['cid'] = p[0].split()[0]
@@ -314,14 +314,14 @@ def coursescan(addr, id_c, keys = cr.keys()):
             if not s == '' and all(i in z for i in s):
                 day.append(list(s.replace(' ', '')))
             if ':' in s and '-' in s:
-                ss = s.replace(' ', '')
+                ss = s.replace(' ', '') #ss eliminates spaces
                 j = ss.index(':')
                 if ss[j-1].isdigit() and ss[j+1:j+3].isdigit():
-                    m = ss.index('-')
+                    m = ss.index('-') #m is a dash 
                     l = indig(ss)
                     r = ss.upper().index('M', m)
-                    st = Time(*strtime(ss[l:m]))
-                    et = Time(*strtime(ss[m+1:r+1]))
+                    st = Time(*strtime(ss[l:m])) #start time
+                    et = Time(*strtime(ss[m+1:r+1])) #end time
                     time.append((st, et))
         lmin = min(len(time), len(day))
         for i in range(lmin):
@@ -368,15 +368,15 @@ if you are scanning graduate students, the third argument 'level' should be Grad
 def studentscan(addr, id_s, level = Student):
     '''
     
-    :param addr:
-    :param id_s:
-    :param level:
+    :param addr: the address of the text file containing student schedule
+    :param id_s: undergraduate student type
+    :param level: what type of student, graduate or undergraduate
     '''
     def strins(p, level):
         '''
         
-        :param p:
-        :param level:
+        :param p: position of string, 0 first column, 1 second column, and so on (?)
+        :param level: type of student, graduate or undergraduate
         '''
         dic = {}
         dic['name'] = p[0]
@@ -440,13 +440,13 @@ the first argument 'addr' should be the address of the text file which contains 
 def infoscan(addr, id_g = id_g):
     '''
     
-    :param addr:
-    :param id_g:
+    :param addr: address of the text file containing background information of graduate students
+    :param id_g: graduate student file information 
     '''
     def strins(p):
         '''
         
-        :param p:
+        :param p: position in document (by column, 0 is first position, 1 is second position, and so on)
         '''
         h = p[0]
         i = inalp(h)
@@ -508,9 +508,9 @@ the second argument 'offset' denotes the minimum number of minutes the course ti
 def nonconflict(c, s, offset = 14):
     '''
     
-    :param c:
-    :param s:
-    :param offset:
+    :param c: course number
+    :param s: student schedule
+    :param offset: the number of minutes after scheduled/busy time (a grace period; i.e. if class ends at 2:30, a student is not available to TA class until 2:44)
     '''
     for i in range(5):
         for ct in c.ctime[i]:
@@ -527,9 +527,9 @@ class Datascan(Frame):
     def __init__(self, parent = None, typestr = None, title = ''):
         '''
         
-        :param parent:
-        :param typestr:
-        :param title:
+        :param parent: original file
+        :param typestr: string
+        :param title: course title
         '''
         Frame.__init__(self, parent)
         self.address = ''
@@ -557,10 +557,13 @@ class Datascan(Frame):
         main(self.master)
         self.destroy()
 
+'''
+GUI: consists of 4 buttons on a frame; very very simple
+'''
 def main(p):
     '''
     
-    :param p:
+    :param p: position of buttons on the frame
     '''
     tt = Frame(p)
     tt.pack(expand = YES, fill = BOTH)
@@ -572,8 +575,8 @@ def main(p):
 def under(p = None, t = ''):
     '''
     
-    :param p:
-    :param t:
+    :param p: position variable
+    :param t: t is simply a ''
     '''
     u = Toplevel(p)
     u.geometry('700x400+300-300')
@@ -591,7 +594,7 @@ def under(p = None, t = ''):
 def under1(title = '', fr = None, parent = None):
     '''
     
-    :param title:
+    :param title: 
     :param fr:
     :param parent:
     '''
