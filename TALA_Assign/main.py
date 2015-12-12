@@ -2,7 +2,7 @@ from tkinter import *
 from tkinter.filedialog import askopenfilename
 from tkinter.filedialog import asksaveasfilename
 from tkinter import messagebox
-
+import unittest
 
 class Time:
     def __init__(self, hour = 0, minute = 0):
@@ -788,6 +788,30 @@ def info(s, ss):
         elif s in id_s8.keys():
             res = str(id_s8[s])
     ss.settext(res)
+
+#Automated test cases for strtime,indig, and inalp
+#Most everything after line 218 is file scanning, or UI, and not unittest
+#strtime starts on line 180, indig starts on line 198, inalp starts on line 207
+#The 3 functions have 2 assert equals, and a 3rd test that is an assert not equals
+class Testcases(unittest.TestCase):
+    def test_strtime1(self):
+        self.assertEquals(strtime('1:10AM'),(1, 10))
+    def test_strtime2(self):
+        self.assertEquals(strtime('1:10PM'),(13, 10))
+    def test_strime3(self):
+        self.assertNotEquals(strtime('1:10PM'), (1,10))
+    def test_indig1(self):
+        self.assertEquals(indig('abc2'),3)
+    def test_indig2(self):
+        self.assertEquals(indig('2abc'),0)
+    def test_indig3(self):
+        self.assertNotEquals(indig('2abc'),2)
+    def test_inalp1(self):
+        self.assertEquals(inalp('123a'),3)
+    def test_inalp2(self):
+        self.assertEquals(inalp('a123'),0)
+    def test_inalp3(self):
+        self.assertNotEquals(inalp('a123'),'a')
 
 root = Tk()
 root.title('TA Assignment')
