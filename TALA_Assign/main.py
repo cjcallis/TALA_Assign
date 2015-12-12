@@ -13,15 +13,14 @@ class Time:
         '''
         self.time = (hour, minute)
     def __le__(self, x):
-        '''
-        
-        :param x: 
+        ''' 
+        :param x: used as a time comparison variable
         '''
         return self.time[0] < x.time[0] or self.time[0] == x.time[0] and self.time[1] <= x.time[1]
     def __ge__(self, x):
         '''
         
-        :param x: 
+        :param x: used as a time comparison variable
         '''
         return self.time[0] > x.time[0] or self.time[0] == x.time[0] and self.time[1] >= x.time[1]
     def __repr__(self):
@@ -29,10 +28,10 @@ class Time:
             return str(self.time[0]) + ':' +str(self.time[1])
         else:
             return str(self.time[0]) + ':0' +str(self.time[1])
-    def dis(self, y):  #this method measures the distance between self and another time y.
+    def dis(self, y):  
         '''
-        
-        :param y:
+        This function measures the distance between self and another time y.
+        :param y: used as a time comparison variable
         '''
         return 60*(self.time[0] - y.time[0]) + self.time[1] - y.time[1]
 
@@ -40,7 +39,6 @@ class Time:
 class Course:
     def __init__(self, cid, num, ctype = 'LEC', ccap = '0 OF 0'):
         '''
-        
         :param cid: course id (letters)
         :param num: course code (number)
         :param ctype: type of course (lab or lecture)
@@ -59,12 +57,12 @@ class Course:
                 temp = days[i] + ': ' + ', '.join(['%s - %s' % t for t in self.ctime[i]]) + '\n'
                 res += temp
         return res
-    '''The function update() add the lecture time in each weekday.
-        The argument 'day' should be an integer in range(5) and 
-        argument 'bt' should be a tuple of the form (starttime, endtime)'''    
+
     def update(self, day, bt):
         '''
-        
+        The function update() add the lecture time in each weekday.
+        The argument 'day' should be an integer in range(5) and 
+        argument 'bt' should be a tuple of the form (starttime, endtime)
         :param day: day of the week
         :param bt: class beginning/ending time (tuple)
         '''
@@ -75,7 +73,6 @@ class Course:
 class Student:
     def __init__(self, name, sid, level = 'UnderGrad'):
         '''
-        
         :param name: student's name
         :param sid: student id number
         :param level: undergradute or graduate
@@ -94,12 +91,12 @@ class Student:
                 temp = days[i] + ': ' + ', '.join(['%s - %s' % t for t in self.stime[i]]) + '\n'
                 res += temp
         return res
-    '''The function update() add the busy time in each weekday.
-    The argument 'day' should be an integer in range(5) and 
-    argument 'bt' should be a tuple of the form (starttime, endtime)'''
+
     def update(self, day, bt):
         '''
-        
+        The function update() add the busy time in each weekday.
+        The argument 'day' should be an integer in range(5) and 
+        argument 'bt' should be a tuple of the form (starttime, endtime)
         :param day: returns day of the week
         :param bt: returns time (hour:minute - hour:minute)
         '''
@@ -222,13 +219,10 @@ cr[672] = (f([672]), f())
 cr[673] = (f([673, 872]), f())
 
 
-'''
-the following function convert a string denoting time to a tuple of two integers
-for example, it will convert '1:23AM' to (1, 23) and '1:23PM' to (13, 23)
-'''
 def strtime(s):
     '''
-    
+    This following function convert a string denoting time to a tuple of two integers
+     example, it will convert '1:23AM' to (1, 23) and '1:23PM' to (13, 23)
     :param s: first time in the time tuple (start_time : end_time AM/PM)
     '''
     if s.index(':') == 1:
@@ -250,7 +244,6 @@ def strtime(s):
 #the following function returns the first index in string s which is a digit.
 def indig(s):
     '''
-    
     :param s: return first index of string that is a digit
     '''
     c = 0
@@ -263,7 +256,6 @@ def indig(s):
 #the following function returns the first index in string s which is an alphabet.
 def inalp(s):
     '''
-    
     :param s: return the first index in the string that is a character
     '''
     c = 0
@@ -275,30 +267,28 @@ def inalp(s):
 
 
 
-'''
-The following function scans the courses information from text file. The result is the dictionary 'id_c' is populated.
-the first argument 'addr' should be the address of the text file which contains the course information.
-'''
+
 def coursescan(addr, id_c, keys = cr.keys()):
     '''
-    
+    This function scans the courses information from text file. The result is the dictionary 'id_c' is populated.
+    the first argument 'addr' should be the address of the text file which contains the course information.
     :param addr: the address of the string which contains the course information 
     :param id_c: the id of the course
     :param keys: number of course credits
     '''
-    def ccap(p): # this function parses the capacity of the course from string 'p'. If no capacity info is detected, the program consider the course being cancelled.
+    def ccap(p):
         '''
-        
+        this function parses the capacity of the course from string 'p'. If no capacity info is detected, the program consider the course being cancelled.
         :param p: returns course capacity as a digit rather than a string
         '''
         for s in p:
             if 'OF' in s and s.split()[0].isdigit():
                 return s
         return ''
-    def strins(p): # the string 'p' contains the full information of ONE course in the text file, and the function returns a tuple: (course id, course instance).
+    def strins(p):
         '''
-        
-        :param p: 
+        the string 'p' contains the full information of ONE course in the text file, and the function returns a tuple: (course id, course instance).
+        :param p: string
         '''
         dic = {}
         dic['cid'] = p[0].split()[0]
@@ -358,16 +348,14 @@ def coursescan(addr, id_c, keys = cr.keys()):
 
 
 
-'''
-the following function scans the text file which contains the student's schedule. 
-The result is the dictionary 'id_s6' or 'id_s8' or 'id_g' is populated.
-the first argument 'addr' should be the address of the text file which contains the schedule of the students.
-the second argument 'id_s' should be one of 'id_s6', 'id_s8' or 'id_g', depending on which type of students you are scanning.
-if you are scanning graduate students, the third argument 'level' should be Grad, since graduate students are represented by class Grad.
-'''
+
 def studentscan(addr, id_s, level = Student):
     '''
-    
+    This function scans the text file which contains the student's schedule. 
+    The result is the dictionary 'id_s6' or 'id_s8' or 'id_g' is populated.
+    the first argument 'addr' should be the address of the text file which contains the schedule of the students.
+    the second argument 'id_s' should be one of 'id_s6', 'id_s8' or 'id_g', depending on which type of students you are scanning.
+    if you are scanning graduate students, the third argument 'level' should be Grad, since graduate students are represented by class Grad.
     :param addr: the address of the text file containing student schedule
     :param id_s: undergraduate student type
     :param level: what type of student, graduate or undergraduate
@@ -433,13 +421,11 @@ def studentscan(addr, id_s, level = Student):
 
 
 
-'''
-the following function updates the background information of graduate students.
-the first argument 'addr' should be the address of the text file which contains the background info of graduate students.
-'''
+
 def infoscan(addr, id_g = id_g):
     '''
-    
+    the following function updates the background information of graduate students.
+    the first argument 'addr' should be the address of the text file which contains the background info of graduate students.
     :param addr: address of the text file containing background information of graduate students
     :param id_g: graduate student file information 
     '''
@@ -501,13 +487,10 @@ def infoscan(addr, id_g = id_g):
             
 
 
-'''
-the following function check whether the time of course 'c' is in conflict with the schedule of student 's'.
-the second argument 'offset' denotes the minimum number of minutes the course time should be apart from the student's unavailable time, the default value is 14 minutes.
-'''
 def nonconflict(c, s, offset = 14):
     '''
-    
+    the following function checks whether the time of course 'c' is in conflict with the schedule of student 's'.
+    the second argument 'offset' denotes the minimum number of minutes the course time should be apart from the student's unavailable time, the default value is 14 minutes.
     :param c: course number
     :param s: student schedule
     :param offset: the number of minutes after scheduled/busy time (a grace period; i.e. if class ends at 2:30, a student is not available to TA class until 2:44)
@@ -558,7 +541,7 @@ class Datascan(Frame):
         self.destroy()
 
 '''
-GUI: consists of 4 buttons on a frame; very very simple
+GUI: consists of 4 buttons on a frame; very simple.
 '''
 def main(p):
     '''
@@ -594,9 +577,9 @@ def under(p = None, t = ''):
 def under1(title = '', fr = None, parent = None):
     '''
     
-    :param title: 
-    :param fr:
-    :param parent:
+    :param title: The title of the option
+    :param fr: frame variable
+    :param parent: parent frame
     '''
     address = ''
     address = askopenfilename(parent = parent, filetypes = [("Text files","*.txt")])
@@ -635,8 +618,8 @@ def under1(title = '', fr = None, parent = None):
 def sav(res, parent = None):
     '''
     
-    :param res:
-    :param parent:
+    :param res: resource file variable
+    :param parent: parent frame
     '''
     addr = ''
     addr = asksaveasfilename(defaultextension = '.txt',  filetypes = [('Text files','*.txt')])
@@ -649,7 +632,7 @@ def sav(res, parent = None):
 def grad0(p = None):
     '''
     
-    :param p:
+    :param p: frame var
     '''
     u = Toplevel(p)
     u.geometry('700x400+300-300')
@@ -667,8 +650,8 @@ def grad0(p = None):
 def gradsche(fr, parent = None):
     '''
     
-    :param fr:
-    :param parent:
+    :param fr: frame variable
+    :param parent: parent frame
     '''
     address = ''
     address = askopenfilename(parent = parent, filetypes = [("Text files","*.txt")])
@@ -687,8 +670,8 @@ def gradsche(fr, parent = None):
 def grad1(fr, parent = None):
     '''
     
-    :param fr:
-    :param parent:
+    :param fr: frame variable
+    :param parent: parent frame
     '''
     fr.destroy()
     fr2 = Frame(parent)
@@ -702,8 +685,8 @@ def grad1(fr, parent = None):
 def gradinfo(fr, parent = None):
     '''
     
-    :param fr:
-    :param parent:
+    :param fr: frame variable
+    :param parent: parent frame
     '''
     address = ''
     address = askopenfilename(parent = parent, filetypes = [("Text files","*.txt")])
@@ -770,7 +753,7 @@ class ScrolledText(Frame):
 def search(parent = None):
     '''
     
-    :param parent:
+    :param parent: parent frame
     '''
     u = Toplevel(parent)
     u.geometry('800x500+100-100')
@@ -792,8 +775,8 @@ def search(parent = None):
 def info(s, ss):
     '''
     
-    :param s:
-    :param ss:
+    :param s: the student info
+    :param ss: the final output students info
     '''
     res = 'Student can not be found.'
     s = s.strip()
