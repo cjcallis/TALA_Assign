@@ -15,4 +15,4 @@ In documentation folder you can find the documentation about the class and funct
 Please download the documentation folder and open index.html using your broswer to view the documentation.
 As mentioned above, the executable for Windows is in https://drive.google.com/file/d/0BwvaqC6sH5AiRS02alJVcGk1NW8/view?usp=sharing.
 
-The full documentation which documents the details of how this project is going is in Sprint6 deliverables. 
+The full documentation which documents the details of how this project is going, including the scrum artifacts on trello, is in Sprint6 deliverables. 
